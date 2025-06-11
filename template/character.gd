@@ -1,19 +1,26 @@
-extends Camera2D
+extends KinematicBody2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var player=get_parent().get_node("Player")
-
+var vel=Vector2(0,0)
+onready var animator=get_node("AnimatedSprite")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-
 func _process(delta):
-	var diff=player.position-position
-	position+=diff*diff.length()*.001
+	if vel.x>0:
+		animator.flip_h=false
+	if vel.x<0:
+		animator.flip_h=true
+	if vel.length()>0:
+		animator.play("right")
+	else:
+		animator.play("idle")
+
+	move_and_collide(vel)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
