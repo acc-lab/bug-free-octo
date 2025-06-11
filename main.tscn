@@ -57,6 +57,7 @@ animation = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 2, 2 )
 script = ExtResource( 3 )
 
 [node name="3Zlcw9Izsqr31" type="Sprite" parent="."]
