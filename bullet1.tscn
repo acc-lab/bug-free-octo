@@ -4,10 +4,11 @@
 [ext_resource path="res://bullet1.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 7.0
-height = 24.0
+radius = 6.0
+height = 26.0
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
+collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

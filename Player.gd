@@ -23,13 +23,19 @@ func _physics_process(delta):
 		emit_signal("Shoot",mousepos-get_viewport_rect().size/2-position+camera.position,position)
 	vel=Vector2(0,0)
 	if Input.is_key_pressed(KEY_A):
+		animator.flip_h=true
+		animator.play("right")
 		vel+=Vector2(-1,0)
 	if Input.is_key_pressed(KEY_D):
+		animator.flip_h=false
+		animator.play("right")
 		vel+=Vector2(1,0)
 	if Input.is_key_pressed(KEY_W):
 		vel+=Vector2(0,-1)
 	if Input.is_key_pressed(KEY_S):
 		vel+=Vector2(0,1)
+	if vel==Vector2.ZERO:
+		animator.play('idle')
 	
 	vel=vel.normalized()*4
 	

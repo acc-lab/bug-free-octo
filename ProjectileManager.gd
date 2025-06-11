@@ -20,5 +20,5 @@ func _ready():
 func _on_Player_Shoot(dir,pos):
 	var inst=bullet1.instance()
 	inst.velocity=dir.normalized()*10
-	inst.position=pos+dir.normalized()*50
+	inst.position=pos+dir.normalized()*70
 	add_child(inst)
