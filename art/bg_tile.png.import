@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ACC-RAT.png-8d951239329452982b9ce8ff030c9227.stex"
+path="res://.import/bg_tile.png-473e205dc682aba02e0c3411911b8350.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/ACC-RAT.png"
-dest_files=[ "res://.import/ACC-RAT.png-8d951239329452982b9ce8ff030c9227.stex" ]
+source_file="res://art/bg_tile.png"
+dest_files=[ "res://.import/bg_tile.png-473e205dc682aba02e0c3411911b8350.stex" ]
 
 [params]
 
@@ -20,7 +20,6 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
 flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false

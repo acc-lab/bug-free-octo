@@ -29,7 +29,7 @@ func _process(delta):
 		vel+=Vector2(0,-1)
 	if Input.is_key_pressed(KEY_S):
 		vel+=Vector2(0,1)
-	vel=vel.normalized()*200*delta
+	vel=vel.normalized()*200
 	
 func _physics_process(delta):
 	pass
