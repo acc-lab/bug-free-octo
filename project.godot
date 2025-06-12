@@ -8,11 +8,29 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Projectile",
+"language": "GDScript",
+"path": "res://template/projectile.gd"
+} ]
+_global_script_class_icons={
+"Projectile": ""
+}
+
 [application]
 
 config/name="Bug-free-octo"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://main.gd"
+
+[global]
+
+autoload=false
 
 [gui]
 
